@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Review Site</title>
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 1rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /* Dark mode toggle button */
+        #darkModeToggle {
+            background-color: transparent;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        /* Hero section styles */
+        .hero {
+            background-image: url('hero-background.jpg'); /* Replace with your image */
+            background-size: cover;
+            text-align: center;
+            padding: 4rem 0;
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Reviews section styles */
+        .reviews {
+            /* Customize as needed */
+        }
+
+        /* Upcoming movies section styles */
+        .upcoming {
+            /* Customize as needed */
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        footer ul li {
+            display: inline-block;
+            margin-right: 1rem;
+        }
+
+        footer ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Upcoming</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Dark/Light Mode Toggle -->
+        <button id="darkModeToggle">Toggle Dark Mode</button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Latest Reviews and Trailers</h1>
+        <!-- Search Bar -->
+        <input type="text" placeholder="Search movies...">
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+        <!-- Movie Details, Ratings, and User Comments -->
+        <!-- You can populate this section dynamically using JavaScript -->
+    </section>
+
+    <!-- Upcoming Movies Grid/List -->
+    <section class="upcoming">
+        <!-- Display upcoming movies with filters and search functionality -->
+    </section>
+
+    <!-- About and Contact Pages -->
+    <section class="about">
+        <!-- About page content -->
+    </section>
+    <section class="contact">
+        <!-- Contact page content -->
+    </section>
+
+    <!-- Footer with Social Links -->
+    <footer>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </footer>
+
+    <!-- JavaScript for Dark Mode Toggle -->
+    <script>
+        // JavaScript for Dark Mode Toggle
+        const darkModeToggle = document.getElementById('darkModeToggle');
+
+        darkModeToggle.addEventListener('click', () => {
+            // Toggle dark mode logic here
+            const body = document.body;
+            body.classList.toggle('dark-mode'); // Add a CSS class for dark mode
+        });
+    </script>
+</body>
+</html>
